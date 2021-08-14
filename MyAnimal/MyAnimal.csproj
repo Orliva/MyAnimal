@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>icon_cat_.ico</ApplicationIcon>
+    <Copyright>OtpadProgKor</Copyright>
+    <AssemblyVersion>1.0.0.2</AssemblyVersion>
+    <PackageReleaseNotes>Релиз кота. Умеренная критика, ошибки, недоработки принимаются и приветствуются!</PackageReleaseNotes>
+    <Authors>OtpadProgKor</Authors>
+    <Company>OOOOtpadProgKorCorp</Company>
+    <Description>Кот, бегает за курсором, иногда спит.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\netcoreapp3.1\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MyAnimalDll">
+      <HintPath>..\..\..\Приоритет\Кот\MyAnimalDll\MyAnimalDll\bin\Release\netcoreapp3.0\MyAnimalDll.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
